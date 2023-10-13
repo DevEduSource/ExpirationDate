@@ -21,3 +21,10 @@ Sistema de Data de Validade a partir da data de fabricação para produtos que n
 
 # Tela Inicial no Tema Noturno
 <img src="https://i.imgur.com/o4atfvu.jpg" width="180" height="400">
+
+# Back end
+- 100% Java
+
+# IDE
+- Android Studio
+
