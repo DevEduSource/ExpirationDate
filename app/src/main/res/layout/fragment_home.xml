@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <EditText
+        android:id="@+id/editTextBaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:focusable="false"
+        android:hint="Fabrication Date"
+        android:textAlignment="center"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <EditText
+        android:id="@+id/editTextDaysToAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Add Days"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBaseDate" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="Calculate Days"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDaysToAdd" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expiration Date "
+        android:textAlignment="center"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewCalendarLogo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expire Date"
+        android:textAlignment="center"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/txtExpireDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00/00/0000"
+        android:textAlignment="center"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/imgViewCalendarLogo"
+        android:layout_width="152dp"
+        android:layout_height="169dp"
+        android:src="@drawable/gatecalendar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

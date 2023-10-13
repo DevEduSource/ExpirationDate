@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Expiration Date</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">About</string>
+</resources>
